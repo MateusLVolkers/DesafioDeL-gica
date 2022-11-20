@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Desafio1">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Média aritmética de 4 notas"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        android:id="@+id/titulo_D1_ID"
+        android:layout_marginTop="50dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_D1_ID"
+        app:layout_constraintStart_toStartOf="@id/titulo_D1_ID"
+        app:layout_constraintEnd_toEndOf="@id/titulo_D1_ID"
+        android:text="@string/desafio1_descricao"
+        android:id="@+id/desafio1_descricao"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/desafio1_descricao"
+        app:layout_constraintStart_toStartOf="@id/titulo_D1_ID"
+        android:layout_margin="30dp"
+        android:text="@string/desafio1_nome"
+        android:id="@+id/desafio1_nome_id"
+        />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/desafio1_nome_id"
+        app:layout_constraintEnd_toEndOf="@id/titulo_D1_ID"
+       app:layout_constraintBottom_toBottomOf="@id/desafio1_nome_id"
+        app:layout_constraintTop_toTopOf="@id/desafio1_nome_id"
+        android:id="@+id/desafio1_recebe_nome"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/desafio1_nome_id"
+        app:layout_constraintStart_toStartOf="@id/desafio1_nome_id"
+        android:layout_marginTop="35dp"
+        android:text="Digite a nota 1:"
+        android:id="@+id/desafio1_nota_titulo"
+        />
+
+    <EditText
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toTopOf="@id/desafio1_nota_titulo"
+        app:layout_constraintBottom_toBottomOf="@id/desafio1_nota_titulo"
+        app:layout_constraintStart_toEndOf="@id/desafio1_nota_titulo"
+        android:id="@+id/desafio1_recebe_notas"
+        android:inputType="number"
+        android:numeric="integer"
+        android:hint="0 - 10"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/desafio1_nota_titulo"
+        app:layout_constraintStart_toStartOf="@id/desafio1_nota_titulo"
+        android:layout_marginTop="15dp"
+        android:text="Digite a nota 2:"
+        android:id="@+id/desafio1_nota2_titulo"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/desafio1_nota2_titulo"
+        app:layout_constraintStart_toStartOf="@id/desafio1_nota2_titulo"
+        android:layout_marginTop="10dp"
+        android:text="Digite a nota 3:"
+        android:id="@+id/desafio1_nota3_titulo"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/desafio1_nota3_titulo"
+        app:layout_constraintStart_toStartOf="@id/desafio1_nota3_titulo"
+        android:layout_marginTop="10dp"
+        android:text="Digite a nota 4:"
+        android:id="@+id/desafio1_nota4_titulo"
+        />
+
+    <EditText
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toTopOf="@id/desafio1_nota2_titulo"
+        app:layout_constraintBottom_toBottomOf="@id/desafio1_nota2_titulo"
+        app:layout_constraintStart_toEndOf="@id/desafio1_nota2_titulo"
+        android:id="@+id/desafio1_recebe_notas2"
+        android:inputType="number"
+        android:numeric="integer"
+        android:hint="0 - 10"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toTopOf="@id/desafio1_nota3_titulo"
+        app:layout_constraintBottom_toBottomOf="@id/desafio1_nota3_titulo"
+        app:layout_constraintStart_toEndOf="@id/desafio1_nota3_titulo"
+        android:id="@+id/desafio1_recebe_notas3"
+        android:inputType="number"
+        android:numeric="integer"
+        android:hint="0 - 10"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toTopOf="@id/desafio1_nota4_titulo"
+        app:layout_constraintBottom_toBottomOf="@id/desafio1_nota4_titulo"
+        app:layout_constraintStart_toEndOf="@id/desafio1_nota4_titulo"
+        android:id="@+id/desafio1_recebe_notas4"
+        android:inputType="number"
+        android:numeric="integer"
+        android:hint="0 - 10"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_calcular_desafio1"
+        app:layout_constraintTop_toBottomOf="@+id/desafio1_nota4_titulo"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/desafio1_limpar"
+        android:text="CALCULAR"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/desafio1_resultado"
+        app:layout_constraintTop_toBottomOf="@id/btn_calcular_desafio1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="10dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Limpar"
+        app:layout_constraintBottom_toBottomOf="@id/btn_calcular_desafio1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_calcular_desafio1"
+        android:id="@+id/desafio1_limpar"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

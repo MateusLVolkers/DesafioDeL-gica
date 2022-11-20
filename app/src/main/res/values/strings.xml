@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Desafio de Lógica</string>
+    <string name="btn_desafio1">Desafio 1</string>
+    <string name="btn_desafio2">Desafio 2</string>
+    <string name="btn_desafio3">Desafio 3</string>
+    <string name="titulo_principal">Selecione um dos desafios abaixo:</string>
+    <string name="titulo_desafio1">Desafio 1</string>
+    <string name="titulo_desafio2">Desafio 2</string>
+    <string name="titulo_desafio3">Desafio 3</string>
+    <string name="desafio1_descricao">Escreva seu nome e 4 notas para calcular a média</string>
+    <string name="desafio1_nome">Nome:</string>
+</resources>
