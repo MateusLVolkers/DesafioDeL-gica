@@ -58,9 +58,19 @@
         android:id="@+id/btn_alterar_nome_d3"
         app:layout_constraintTop_toBottomOf="@id/recebe_nome_d3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/desafio3_limpar_btn"
         android:layout_marginTop="10dp"
         android:text="Reorganizar nome"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/desafio3_limpar_btn"
+        app:layout_constraintTop_toTopOf="@id/btn_alterar_nome_d3"
+        app:layout_constraintStart_toEndOf="@id/btn_alterar_nome_d3"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Limpar"
         />
 
     <TextView

@@ -16,6 +16,7 @@ class Desafio2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_desafio2)
 
+        val btnLimparDados: Button = findViewById(R.id.desafio2_btn_limpar)
         val recebeFrase: EditText = findViewById(R.id.recebe_frase_d2)
         val btnCalcular: Button = findViewById(R.id.btn_calcular_d2)
         val resultadoTxt: TextView = findViewById(R.id.resultado_d2)
@@ -28,6 +29,12 @@ class Desafio2 : AppCompatActivity() {
 
             resultadoTxt.text = "Maior letra: ${retornaMaiorChar(fraseDigitada)}"
 
+        }
+
+        btnLimparDados.setOnClickListener{
+
+            resultadoTxt.text = ""
+            recebeFrase.text.clear()
 
         }
 

@@ -15,7 +15,7 @@ class Desafio3 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_desafio3)
 
-
+        val btnLimparDadosD3 : Button = findViewById(R.id.desafio3_limpar_btn)
         val nomeDigitado: EditText = findViewById(R.id.recebe_nome_d3)
         val btnAlterarNome: Button = findViewById(R.id.btn_alterar_nome_d3)
         val nomeReorganizadoD3: TextView = findViewById(R.id.nome_reorganizado_d3)
@@ -25,10 +25,13 @@ class Desafio3 : AppCompatActivity() {
             if (validaNome(nomeDigitado).not()) {
                 return@setOnClickListener
             }
-
             nomeReorganizadoD3.text = quebraString(nomeAutor)
         }
 
+        btnLimparDadosD3.setOnClickListener{
+            nomeDigitado.text.clear()
+            nomeReorganizadoD3.text = ""
+        }
 
     }
 
