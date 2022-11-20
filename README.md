@@ -8,7 +8,6 @@ Seguir o caminho: /app/src/main/java/com/example/desafiodelgica/ para encontrar 
 
 ## Mensagens de erro
 
-![Mensagens de erro](https://user-images.githubusercontent.com/46768661/202929314-87aa95c5-435a-4c52-948d-a0d6039c2adb.png)
+![Mensagem de erro](https://user-images.githubusercontent.com/46768661/202933418-bb73ddcb-065c-4b19-8613-34814a4cb596.jpg)
 
-Apesar das mensagens serem mostradas somente no desafio 1, elas também são utilizadas nos desafios 2 e 3.
-
+Na imagem as mensagens foram mostradas somente no desafio 1, mas elas também são utilizadas nos desafios 2 e 3.
