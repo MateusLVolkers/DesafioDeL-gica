@@ -8,7 +8,7 @@ Este aplicativo foi desenvolvido a partir de alguns desafios propostos pelo Grup
 
 ![Telas do aplicativo](https://user-images.githubusercontent.com/46768661/202929254-c59a7d5d-d1eb-4f77-bc11-3948c109ea2c.png)
 
-A partir do menu inicial, é possível acessar os desafios propostos e para voltar, utiliza-se a navegação do próprio smartphone.
+A partir do menu inicial, é possível acessar os desafios propostos.
 
 
 ### Desafio 1
