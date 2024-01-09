@@ -20,42 +20,26 @@ class MainActivity : AppCompatActivity() {
         btn1Listener(btnDesafio1)
         btn2Listener(btnDesafio2)
         btn3Listener(btnDesafio3)
-
-
     }
 
     fun btn1Listener (btnDesafio1:Button) {
-
         btnDesafio1.setOnClickListener() {
-
             val intent = Intent(applicationContext, Desafio1::class.java)
             startActivity(intent)
-
         }
     }
 
         fun btn2Listener (btnDesafio2:Button){
-
             btnDesafio2.setOnClickListener(){
-
                 val intent = Intent (applicationContext, Desafio2::class.java)
                 startActivity(intent)
-
             }
         }
 
         fun btn3Listener (btnDesafio3:Button){
-
             btnDesafio3.setOnClickListener(){
-
                 val intent = Intent (applicationContext, Desafio3::class.java)
                 startActivity(intent)
-
             }
         }
-
-
-
-
-
 }

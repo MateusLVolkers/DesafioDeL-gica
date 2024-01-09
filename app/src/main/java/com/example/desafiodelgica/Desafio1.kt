@@ -23,9 +23,7 @@ class Desafio1 : AppCompatActivity() {
         val desafio1Nota4: EditText = findViewById(R.id.desafio1_recebe_notas4)
         val desafio1BtnCalcular: Button = findViewById(R.id.btn_calcular_desafio1)
 
-
         desafio1BtnCalcular.setOnClickListener() {
-
             if (validaNome(desafio1Nome).not()) {
                 return@setOnClickListener
             }
@@ -42,11 +40,9 @@ class Desafio1 : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-
             var notaFinal = calculaMedia(listaNotas)
             desafio1Resultado.setText("Aluno = $nomeAluno // Média = ${String.format("%.2f", notaFinal)}")
             listaNotas.clear()
-
         }
 
         btnLimpar.setOnClickListener() {
@@ -57,14 +53,10 @@ class Desafio1 : AppCompatActivity() {
             desafio1Nota4.text.clear()
             desafio1Resultado.setText("")
         }
-
-
     }
 
     fun validaNome(desafio1Nome: EditText): Boolean {
-
         val nome = desafio1Nome.text.toString()
-
 
         return if (nome.isNullOrBlank()) {
             Toast.makeText(this, "Digite um nome válido", Toast.LENGTH_SHORT).show()
@@ -73,16 +65,10 @@ class Desafio1 : AppCompatActivity() {
             nomeAluno = nome
             true
         }
-
-
     }
 
-
     fun validaNota(desafioNota: EditText): Boolean {
-
         val nota = desafioNota.text.toString().toIntOrNull() ?: -1
-
-
 
         return if (nota < 0 || nota > 10) {
             Toast.makeText(this, "Digite um valor válido", Toast.LENGTH_SHORT).show()
@@ -91,21 +77,14 @@ class Desafio1 : AppCompatActivity() {
             listaNotas.add(nota)
             true
         }
-
     }
 
     fun calculaMedia(lista: MutableList<Int>): Double {
-
         var media = 0.0
 
         for (item in lista) {
             media += item.toDouble()
         }
-
         return media / lista.size
-
     }
-
-
-
 }

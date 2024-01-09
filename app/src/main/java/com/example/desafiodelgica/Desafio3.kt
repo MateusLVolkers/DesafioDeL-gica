@@ -21,22 +21,18 @@ class Desafio3 : AppCompatActivity() {
         val nomeReorganizadoD3: TextView = findViewById(R.id.nome_reorganizado_d3)
 
         btnAlterarNome.setOnClickListener {
-
             if (validaNome(nomeDigitado).not()) {
                 return@setOnClickListener
             }
             nomeReorganizadoD3.text = quebraString(nomeAutor)
         }
-
         btnLimparDadosD3.setOnClickListener{
             nomeDigitado.text.clear()
             nomeReorganizadoD3.text = ""
         }
-
     }
 
     fun validaNome(nomeDigitado: EditText): Boolean {
-
         var nomeDigitado = nomeDigitado.text.toString()
 
         return if (nomeDigitado.isNullOrBlank()) {
@@ -46,17 +42,13 @@ class Desafio3 : AppCompatActivity() {
             nomeAutor = nomeDigitado.uppercase()
             true
         }
-
     }
 
     fun quebraString(nomeDigitado: String): String {
-
         val stringQuebrada = nomeDigitado.trimEnd().split(" ")
-
         val char = stringQuebrada.dropLast(1).map { it.first()}
 
         return "${stringQuebrada.last()}, ${char.joinToString(". ")}."
     }
-
 }
 

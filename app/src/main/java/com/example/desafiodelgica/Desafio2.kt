@@ -26,23 +26,16 @@ class Desafio2 : AppCompatActivity() {
             if (validaFrase(recebeFrase).not()){
                 return@setOnClickListener
             }
-
             resultadoTxt.text = "Maior letra: ${retornaMaiorChar(fraseDigitada)}"
-
         }
 
         btnLimparDados.setOnClickListener{
-
             resultadoTxt.text = ""
             recebeFrase.text.clear()
-
         }
-
-
     }
 
     fun validaFrase(recebeFrase : EditText): Boolean{
-
         val frase = recebeFrase.text.toString()
 
         return if (frase.isNullOrBlank()){
@@ -55,21 +48,14 @@ class Desafio2 : AppCompatActivity() {
     }
 
     fun retornaMaiorChar(frase: String): String {
-
         var charList = frase.toCharArray()
         var maiorChar = Char.MIN_VALUE
 
         for (item in charList){
-
             if (item > maiorChar){
                 maiorChar = item
             }
         }
-
         return maiorChar.toString()
     }
-
-
-
-
 }
